@@ -1,0 +1,53 @@
+=================================================================================================
+
+████████╗░█████╗░██████╗░░█████╗░
+╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗
+░░░██║░░░██║░░██║██║░░██║██║░░██║
+░░░██║░░░██║░░██║██║░░██║██║░░██║
+░░░██║░░░╚█████╔╝██████╔╝╚█████╔╝
+░░░╚═╝░░░░╚════╝░╚═════╝░░╚════╝░
+
+
+
+
+
+
+
+
+* na shkwnei ena pososto DONE
+* na shkwnei gia auton. DONE
+* na kanei deposit gia allon DONE
+* struct pou 8a exei total deposits, total users, total withdraws,
+* amount in the contract (view function) DONE
+
+
+
+===================================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+██████╗░░█████╗░███╗░░██╗███████╗
+██╔══██╗██╔══██╗████╗░██║██╔════╝
+██║░░██║██║░░██║██╔██╗██║█████╗░░
+██║░░██║██║░░██║██║╚████║██╔══╝░░
+██████╔╝╚█████╔╝██║░╚███║███████╗
+╚═════╝░░╚════╝░╚═╝░░╚══╝╚══════╝
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//idea  Ftiakse to lock contract na krataei gia kathe xristi 
+ena balance kai ena lock period
+mapping(address => uint256)
+ftiakse to withdraw Ana xristi na pairnei to poso t
+mapping(address => uint256) userBalances;
+
+mapping(address => uint256) userUnlockTimestamp;
+
+TODO: function approve , tha prepei o owner na epitrepei se 
+    enan allo na kanji withdraw gia auton
+
+userA -> approves userB
+userB withdraws for userA
+
+test 1) check deposit function that updates the timestamp and user value correctly
+test 2) check on withdraw that balances are cleared
+
+
